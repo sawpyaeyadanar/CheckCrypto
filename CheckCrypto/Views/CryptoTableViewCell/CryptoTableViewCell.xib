@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.ttf">
+            <string>Barlow-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="list" rowHeight="96" id="KGk-i7-Jjw" customClass="CryptoTableViewCell" customModule="CheckCrypto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gd8-FQ-koc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EUR" translatesAutoresizingMaskIntoConstraints="NO" id="fRv-4b-FJP">
+                                <rect key="frame" x="0.0" y="22" width="64" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4J0-jr-frT"/>
+                                    <constraint firstAttribute="width" constant="64" id="pPN-Bb-f7c"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Euro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1o-qp-ee3">
+                                <rect key="frame" x="72" y="19.5" width="33" height="20"/>
+                                <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Euro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgS-PN-J3M">
+                                <rect key="frame" x="72" y="47.5" width="29" height="17"/>
+                                <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="14"/>
+                                <color key="textColor" red="0.45882352939999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Euro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8p-Jj-vsb">
+                                <rect key="frame" x="271" y="32" width="33" height="20"/>
+                                <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="E8p-Jj-vsb" secondAttribute="trailing" constant="16" id="9DX-PS-H20"/>
+                            <constraint firstItem="lgS-PN-J3M" firstAttribute="leading" secondItem="fRv-4b-FJP" secondAttribute="trailing" constant="8" symbolic="YES" id="KYv-oV-WiM"/>
+                            <constraint firstItem="u1o-qp-ee3" firstAttribute="leading" secondItem="fRv-4b-FJP" secondAttribute="trailing" constant="8" symbolic="YES" id="Z3x-n6-N8g"/>
+                            <constraint firstItem="lgS-PN-J3M" firstAttribute="top" secondItem="u1o-qp-ee3" secondAttribute="bottom" constant="8" symbolic="YES" id="a6y-Ws-y1Y"/>
+                            <constraint firstAttribute="bottom" secondItem="lgS-PN-J3M" secondAttribute="bottom" constant="19.5" id="eKF-Tz-xkW"/>
+                            <constraint firstItem="fRv-4b-FJP" firstAttribute="centerY" secondItem="Gd8-FQ-koc" secondAttribute="centerY" id="fuB-Ws-hUC"/>
+                            <constraint firstItem="fRv-4b-FJP" firstAttribute="leading" secondItem="Gd8-FQ-koc" secondAttribute="leading" id="oBO-1e-pCY"/>
+                            <constraint firstItem="E8p-Jj-vsb" firstAttribute="centerY" secondItem="Gd8-FQ-koc" secondAttribute="centerY" id="ph3-pW-JcX"/>
+                            <constraint firstItem="u1o-qp-ee3" firstAttribute="top" secondItem="Gd8-FQ-koc" secondAttribute="top" constant="19.5" id="rlz-7f-9Dt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Gd8-FQ-koc" secondAttribute="bottom" constant="16" id="dLP-VO-z66"/>
+                    <constraint firstAttribute="trailing" secondItem="Gd8-FQ-koc" secondAttribute="trailing" id="eJH-Tq-7vG"/>
+                    <constraint firstItem="Gd8-FQ-koc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="h4A-xj-414"/>
+                    <constraint firstItem="Gd8-FQ-koc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="qx2-lR-igf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="currencyLbl" destination="lgS-PN-J3M" id="01p-qA-NcD"/>
+                <outlet property="currencyshortLbl" destination="u1o-qp-ee3" id="FQI-ju-TEv"/>
+                <outlet property="img" destination="fRv-4b-FJP" id="sB6-I6-96J"/>
+                <outlet property="rateFloatLbl" destination="E8p-Jj-vsb" id="VqP-lF-xuP"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="89.732142857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="EUR" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
